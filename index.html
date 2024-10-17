@@ -4,14 +4,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/main.css">
   <title>BookMark - WebPage made with Bootstrap</title>
 </head>
 
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg mx-auto container p-5 d-flex justify-content-between">
+  <nav class="navbar navbar-expand-lg mx-auto container py-5 d-flex justify-content-between">
     <img src="Imagenes/logo-bookmark.svg" height="40" class="cursor-pointer" alt="logo-bookmark">
 
     <!-- TOGGLE -->
@@ -31,241 +35,209 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Contact</a>
         </li>
-        <button type="button" class="btn btn-danger px-4 rounded text-uppercase fw-medium">Login</button>
+        <button type="button" class="btn btn-danger px-4 text-uppercase fw-medium">Login</button>
       </ul>
       </ul>
     </div>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5">
-      <div class="col-10 col-sm-8 col-lg-6">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="657" height="466">
-          <defs>
-            <filter id="a" width="118%" height="126.9%" x="-9%" y="-5.7%" filterUnits="objectBoundingBox">
-              <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1" />
-              <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2" />
-              <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
-                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" />
-              <feMerge>
-                <feMergeNode in="shadowMatrixOuter1" />
-                <feMergeNode in="SourceGraphic" />
-              </feMerge>
-            </filter>
-            <rect id="c" width="578" height="385" rx="26" />
-            <filter id="b" width="126%" height="139%" x="-13%" y="-11.7%" filterUnits="objectBoundingBox">
-              <feOffset dy="30" in="SourceAlpha" result="shadowOffsetOuter1" />
-              <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="20" />
-              <feColorMatrix in="shadowBlurOuter1"
-                values="0 0 0 0 0.18243335 0 0 0 0 0.230632694 0 0 0 0 0.506057518 0 0 0 0.200120192 0" />
-            </filter>
-            <linearGradient id="d" x1="99.013%" x2="2.544%" y1="71.675%" y2="29.014%">
-              <stop offset="0%" stop-color="#151515" />
-              <stop offset="100%" stop-color="#3D3D3D" />
-            </linearGradient>
-            <rect id="e" width="536" height="346" y="3" rx="8" />
-          </defs>
-          <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(39 9)">
-            <g transform="translate(.5 .5)">
-              <g fill-rule="nonzero">
-                <use fill="#000" filter="url(#b)" xlink:href="#c" />
-                <use fill="#777" xlink:href="#c" />
-              </g>
-              <rect width="574.23" height="381.865" x="2" y="2" fill="url(#d)" fill-rule="nonzero" rx="25" />
-              <g transform="translate(21.03 16.303)">
-                <rect width="471.463" height="353.756" x="33" fill="#2A2A2A" fill-rule="nonzero" opacity=".1" rx="5" />
-                <mask id="f" fill="#fff">
-                  <use xlink:href="#e" />
-                </mask>
-                <use fill="#E8EAF6" fill-rule="nonzero" xlink:href="#e" />
-                <g mask="url(#f)">
-                  <path fill="#5267DF" d="M-3.53 3.197h547v59h-547z" />
-                  <g transform="translate(22.47 17.197)" fill="#FFF">
-                    <circle cx="16" cy="16" r="16" opacity=".245" />
-                    <circle cx="477" cy="16" r="16" opacity=".104" />
-                    <g transform="translate(47 6)">
-                      <rect width="120" height="6" opacity=".75" rx="3" />
-                      <rect width="64" height="6" y="14" opacity=".25" rx="3" />
-                    </g>
-                  </g>
-                </g>
-                <g mask="url(#f)">
-                  <g transform="translate(57 96)">
-                    <rect width="261" height="316" fill="#FFF" rx="8" />
-                    <rect width="128" height="316" x="295" fill="#FFF" rx="8" />
-                    <rect width="120" height="6" x="78.47" y="38.197" fill="#242A45" opacity=".5" rx="3" />
-                  </g>
-                </g>
-              </g>
-            </g>
-            <g transform="translate(110 135)">
-              <circle cx="16" cy="26" r="16" fill="#F98E5D" />
-              <rect width="88" height="6" x="284" fill="#242A45" opacity=".25" rx="3" />
-              <rect width="88" height="6" x="284" y="20" fill="#242A45" opacity=".25" rx="3" />
-              <rect width="88" height="6" x="284" y="40" fill="#242A45" opacity=".25" rx="3" />
-              <rect width="88" height="6" x="284" y="60" fill="#242A45" opacity=".25" rx="3" />
-              <rect width="88" height="6" x="284" y="94" fill="#242A45" opacity=".25" rx="3" />
-              <rect width="88" height="6" x="284" y="114" fill="#242A45" opacity=".25" rx="3" />
-              <rect width="88" height="6" x="284" y="134" fill="#242A45" opacity=".25" rx="3" />
-              <rect width="64" height="6" x="47" y="30" fill="#242A45" opacity=".25" rx="3" />
-            </g>
-            <g transform="translate(110 201)">
-              <circle cx="16" cy="16" r="16" fill="#6AC6D6" />
-              <rect width="120" height="6" x="47" y="6" fill="#242A45" opacity=".5" rx="3" />
-              <rect width="64" height="6" x="47" y="20" fill="#242A45" opacity=".25" rx="3" />
-            </g>
-            <g transform="translate(110 257)">
-              <circle cx="16" cy="16" r="16" fill="#A47ED4" />
-              <rect width="120" height="6" x="47" y="6" fill="#242A45" opacity=".5" rx="3" />
-              <rect width="64" height="6" x="47" y="20" fill="#242A45" opacity=".25" rx="3" />
-            </g>
-            <g transform="translate(110 313)">
-              <circle cx="16" cy="16" r="16" fill="#EC7878" />
-              <rect width="120" height="6" x="47" y="6" fill="#242A45" opacity=".5" rx="3" />
-              <rect width="64" height="6" x="47" y="20" fill="#242A45" opacity=".25" rx="3" />
-            </g>
-          </g>
-        </svg>
-      </div>
-      <div class="col-lg-6">
-        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">A Simple Bookmark Manager</h1>
-        <p class="lead">A clean and simple interface to organiza your favourite websites. Open a new browser tab and
-          see
-          your sites load instantly. Try it for free!</p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Get it on Chrome</button>
-          <button type="button" class="btn btn-lg btn-light px-4 shadow">Get it on Firefox</button>
+  <main>
+    <!-- HERO -->
+    <section class="container mx-auto">
+      <div class="row flex-lg-row-reverse align-items-center g-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <div class="container-hero">
+            <!-- <div class="rectangulo"></div> -->
+            <img src="Imagenes/illustration-hero.svg" class="imagem" alt="illustration-hero">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">A Simple Bookmark Manager</h1>
+          <p class="lead">A clean and simple interface to organiza your favourite websites. Open a new browser tab and
+            see
+            your sites load instantly. Try it for free!</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Get it on Chrome</button>
+            <button type="button" class="btn btn-lg btn-light px-4 shadow">Get it on Firefox</button>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FEATURES -->
-  <section class="container col-xxl-8 px-4 py-5">
-    <div class="row px-4 pb-5 text-center">
-      <h1 class="display-5 fw-bold">Features</h1>
-      <div class="col-lg-6 mx-auto">
-        <p class="lead mb-1">Our aim is to make it quick and easy for you to acess your favourite websites. Your
-          bookmarks sync between your devices so you can access them on the go.</p>
-      </div>
-    </div>
-
-    <!-- Tabs navs -->
-    <div class="row px-4 pb-5 text-center">
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link border-bottom p-4" href="">Simple Bookmarking</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link border-bottom p-4" href="">Speedy Searching</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link border-bottom p-4" href="">Easy Sharing</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="row flex-lg-row-reverse align-items-center g-5">
-      <div class="col-10 col-sm-8 col-lg-6">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="657" height="466">
-          <defs>
-            <filter id="a" width="118%" height="126.9%" x="-9%" y="-5.7%" filterUnits="objectBoundingBox">
-              <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1" />
-              <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2" />
-              <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
-                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" />
-              <feMerge>
-                <feMergeNode in="shadowMatrixOuter1" />
-                <feMergeNode in="SourceGraphic" />
-              </feMerge>
-            </filter>
-            <rect id="c" width="578" height="385" rx="26" />
-            <filter id="b" width="126%" height="139%" x="-13%" y="-11.7%" filterUnits="objectBoundingBox">
-              <feOffset dy="30" in="SourceAlpha" result="shadowOffsetOuter1" />
-              <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="20" />
-              <feColorMatrix in="shadowBlurOuter1"
-                values="0 0 0 0 0.18243335 0 0 0 0 0.230632694 0 0 0 0 0.506057518 0 0 0 0.200120192 0" />
-            </filter>
-            <linearGradient id="d" x1="99.013%" x2="2.544%" y1="71.675%" y2="29.014%">
-              <stop offset="0%" stop-color="#151515" />
-              <stop offset="100%" stop-color="#3D3D3D" />
-            </linearGradient>
-            <rect id="e" width="536" height="346" y="3" rx="8" />
-          </defs>
-          <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(39 9)">
-            <g transform="translate(.5 .5)">
-              <g fill-rule="nonzero">
-                <use fill="#000" filter="url(#b)" xlink:href="#c" />
-                <use fill="#777" xlink:href="#c" />
-              </g>
-              <rect width="574.23" height="381.865" x="2" y="2" fill="url(#d)" fill-rule="nonzero" rx="25" />
-              <g transform="translate(21.03 16.303)">
-                <rect width="471.463" height="353.756" x="33" fill="#2A2A2A" fill-rule="nonzero" opacity=".1" rx="5" />
-                <mask id="f" fill="#fff">
-                  <use xlink:href="#e" />
-                </mask>
-                <use fill="#E8EAF6" fill-rule="nonzero" xlink:href="#e" />
-                <g mask="url(#f)">
-                  <path fill="#5267DF" d="M-3.53 3.197h547v59h-547z" />
-                  <g transform="translate(22.47 17.197)" fill="#FFF">
-                    <circle cx="16" cy="16" r="16" opacity=".245" />
-                    <circle cx="477" cy="16" r="16" opacity=".104" />
-                    <g transform="translate(47 6)">
-                      <rect width="120" height="6" opacity=".75" rx="3" />
-                      <rect width="64" height="6" y="14" opacity=".25" rx="3" />
-                    </g>
-                  </g>
-                </g>
-                <g mask="url(#f)">
-                  <g transform="translate(57 96)">
-                    <rect width="261" height="316" fill="#FFF" rx="8" />
-                    <rect width="128" height="316" x="295" fill="#FFF" rx="8" />
-                    <rect width="120" height="6" x="78.47" y="38.197" fill="#242A45" opacity=".5" rx="3" />
-                  </g>
-                </g>
-              </g>
-            </g>
-            <g transform="translate(110 135)">
-              <circle cx="16" cy="26" r="16" fill="#F98E5D" />
-              <rect width="88" height="6" x="284" fill="#242A45" opacity=".25" rx="3" />
-              <rect width="88" height="6" x="284" y="20" fill="#242A45" opacity=".25" rx="3" />
-              <rect width="88" height="6" x="284" y="40" fill="#242A45" opacity=".25" rx="3" />
-              <rect width="88" height="6" x="284" y="60" fill="#242A45" opacity=".25" rx="3" />
-              <rect width="88" height="6" x="284" y="94" fill="#242A45" opacity=".25" rx="3" />
-              <rect width="88" height="6" x="284" y="114" fill="#242A45" opacity=".25" rx="3" />
-              <rect width="88" height="6" x="284" y="134" fill="#242A45" opacity=".25" rx="3" />
-              <rect width="64" height="6" x="47" y="30" fill="#242A45" opacity=".25" rx="3" />
-            </g>
-            <g transform="translate(110 201)">
-              <circle cx="16" cy="16" r="16" fill="#6AC6D6" />
-              <rect width="120" height="6" x="47" y="6" fill="#242A45" opacity=".5" rx="3" />
-              <rect width="64" height="6" x="47" y="20" fill="#242A45" opacity=".25" rx="3" />
-            </g>
-            <g transform="translate(110 257)">
-              <circle cx="16" cy="16" r="16" fill="#A47ED4" />
-              <rect width="120" height="6" x="47" y="6" fill="#242A45" opacity=".5" rx="3" />
-              <rect width="64" height="6" x="47" y="20" fill="#242A45" opacity=".25" rx="3" />
-            </g>
-            <g transform="translate(110 313)">
-              <circle cx="16" cy="16" r="16" fill="#EC7878" />
-              <rect width="120" height="6" x="47" y="6" fill="#242A45" opacity=".5" rx="3" />
-              <rect width="64" height="6" x="47" y="20" fill="#242A45" opacity=".25" rx="3" />
-            </g>
-          </g>
-        </svg>
-      </div>
-      <div class="col-lg-6">
-        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Bookmark in one click</h1>
-        <p class="lead">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete
-          control over how you manage your favouirte sites.</p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">More info</button>
+    <!-- FEATURES -->
+    <section class="container col-xxl-8">
+      <div class="row px-4 py-3 text-center">
+        <h1 class="display-5 fw-bold">Features</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-1">Our aim is to make it quick and easy for you to acess your favourite websites. Your
+            bookmarks sync between your devices so you can access them on the go.</p>
         </div>
       </div>
-    </div>
-  </section>
+
+      <!-- Tabs navs -->
+      <div class="row px-4 text-center">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link border-bottom p-4" href="">Simple Bookmarking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link border-bottom p-4" href="">Speedy Searching</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link border-bottom p-4" href="">Easy Sharing</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="container">
+        <div class="row pb-4 pe-lg-0 align-items-center">
+          <div class="col-lg-6 py-lg-5 pt-lg-3 pe-2">
+            <h1 class="display-4 fw-bold lh-1">Border hero with cropped image and shadows</h1>
+            <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
+              popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
+              extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">More info</button>
+            </div>
+          </div>
+          <div class="col-lg-6 p-0">
+            <img class="rounded-lg-3 ps-4 imagem" src="Imagenes/illustration-features-tab-1.svg"
+              alt="illustration-border">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CARDS -->
+    <section class="container col-xxl-8">
+      <div class="row px-4 pb-5 text-center">
+        <h1 class="display-5 fw-bold">Download the extension</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-3">We've got more browsers in the pipeline. Please do let us know if you've got a favourite
+            you'd like us to prioritize.</p>
+        </div>
+      </div>
+
+      <!-- Card1 -->
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col d-flex justify-content-end">
+          <div class="card shadow d-flex justify-content-between rounded-lg-5 py-5">
+            <img src="/Imagenes/logo-chrome.svg" class="card-img-top" alt="chorme-extension" />
+            <div class="card-body">
+              <h5 class="card-title">Add to Chrome</h5>
+              <p class="card-text">Minimum version 62</p>
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Add & Install Extension</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card2 -->
+        <div class="col d-flex justify-content-center">
+          <div class="card shadow rounded-lg-5 py-5">
+            <img src="/Imagenes/logo-firefox.svg" class="card-img-top" alt="chorme-extension" />
+            <div class="card-body">
+              <h5 class="card-title">Add to Firefox</h5>
+              <p class="card-text">Minimum version 55</p>
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Add & Install Extension</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card3 -->
+        <div class="col d-flex justify-content-start">
+          <div class="card shadow rounded-lg-5 py-5">
+            <img src="/Imagenes/logo-opera.svg" class="card-img-top" alt="chorme-extension" />
+            <div class="card-body">
+              <h5 class="card-title">Add to Opera</h5>
+              <p class="card-text">Minimum version 46</p>
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Add & Install Extension</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="container col-xxl-8">
+      <div class="row px-4 pb-5 text-center">
+        <h1 class="display-5 fw-bold">Frequently Asked Questions</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-3">Here are some of our FAQs. If you have any other questions you'd like to answered please
+            feel free to send us email.</p>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              What is Bookmark?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Vestibulum tempus.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              How can I request a new browser?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus..Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Vestibulum tempus.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Is there a mobile app?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus..Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Vestibulum tempus.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              What about other Chromium browsers?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus..Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Vestibulum tempus.
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary btn-lg px-4 mt-5">More
+          info</button>
+      </div>
+    </section>
+
+
+
+  </main>
+  <footer></footer>
 
   <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
 </body>
