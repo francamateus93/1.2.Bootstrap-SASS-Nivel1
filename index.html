@@ -54,7 +54,7 @@
         </div>
         <div class="col-lg-5">
           <h1 class="title-section display-5 lh-2 mb-3">A Simple Bookmark Manager</h1>
-          <p class="text-section lead">A clean and simple interface to organiza your favourite websites. Open a new
+          <p class="text-section lead">A clean and simple interface to organize your favourite websites. Open a new
             browser tab and
             see
             your sites load instantly. Try it for free!</p>
@@ -69,16 +69,16 @@
     <!-- FEATURES -->
     <section class="container col-xxl-8">
       <div class="row px-4 py-3 text-center">
-        <h1 class="title-section display-5">Features</h1>
+        <h1 class="subtitle-section display-5">Features</h1>
         <div class="col-lg-6 mx-auto">
-          <p class="text-section lead mb-1">Our aim is to make it quick and easy for you to acess your favourite
+          <p class="subtext-section lead mb-1">Our aim is to make it quick and easy for you to acess your favourite
             websites. Your
             bookmarks sync between your devices so you can access them on the go.</p>
         </div>
       </div>
 
       <!-- Tabs navs -->
-      <div class="row px-4 text-center">
+      <!-- <div class="row px-4 text-center">
         <ul class="nav justify-content-center">
           <li class="nav-item">
             <a class="nav-link border-bottom p-4" href="">Simple Bookmarking</a>
@@ -90,22 +90,52 @@
             <a class="nav-link border-bottom p-4" href="">Easy Sharing</a>
           </li>
         </ul>
-      </div>
+      </div> -->
 
       <div class="container">
-        <div class="row pb-4 pe-lg-0 align-items-center">
-          <div class="col-lg-6 py-lg-5 pt-lg-3 pe-2">
-            <h1 class="display-4 fw-bold lh-1">Border hero with cropped image and shadows</h1>
-            <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
-              popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
-              extensive prebuilt components, and powerful JavaScript plugins.</p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">More info</button>
+        <div class="row">
+          <div class="col-xs-12 ">
+            <nav>
+              <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link" id="nav-simple-tab" data-toggle="tab" href="#nav-simple"
+                  aria-controls="nav-simple" aria-selected="false">Simple Bookmarking</a>
+                <a class="nav-item nav-link" id="nav-speedy-tab" data-toggle="tab" href="#nav-speedy"
+                  aria-controls="nav-speedy" aria-selected="false">Speedy Searching</a>
+                <a class="nav-item nav-link" id="nav-easy-tab" data-toggle="tab" href="#nav-easy"
+                  aria-controls="nav-easy" aria-selected="false">Easy Sharing</a>
+            </nav>
+            <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-simple" role="tabpanel" aria-labelledby="nav-simple-tab">
+                <div class="row pb-4 pe-lg-0 align-items-center">
+                  <div class="col-lg-6 py-lg-5 pt-lg-3 pe-2">
+                    <h1 class="display-4 fw-bold lh-1">Border hero with cropped image and shadows</h1>
+                    <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the
+                      world’s most
+                      popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid
+                      system,
+                      extensive prebuilt components, and powerful JavaScript plugins.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                      <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">More info</button>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 p-0">
+                    <img class="rounded-lg-3 ps-4 imagem" src="Imagenes/illustration-features-tab-1.svg"
+                      alt="illustration-border">
+                  </div>
+                </div>
+              </div>
+              <div class="" id="nav-speedy" role="tabpanel" aria-labelledby="nav-speedy-tab">
+              </div>
+              <div class="tab-pane fade" id="nav-easy" role="tabpanel" aria-labelledby="nav-easy-tab">
+                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat
+                veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit
+                non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim
+                occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit.
+                Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit
+                occaecat anim ullamco ad duis occaecat ex.
+              </div>
             </div>
-          </div>
-          <div class="col-lg-6 p-0">
-            <img class="rounded-lg-3 ps-4 imagem" src="Imagenes/illustration-features-tab-1.svg"
-              alt="illustration-border">
+
           </div>
         </div>
       </div>
@@ -115,9 +145,11 @@
     <!-- CARDS -->
     <section class="container col-xxl-8">
       <div class="row px-4 pb-5 text-center">
-        <h1 class="display-5 fw-bold">Download the extension</h1>
+        <h1 class="subtitle-section display-5">Download the extension</h1>
         <div class="col-lg-6 mx-auto">
-          <p class="lead mb-3">We've got more browsers in the pipeline. Please do let us know if you've got a favourite
+          <p class="subtext-section lead mb-3">We've got more browsers in the pipeline. Please do let us know if you've
+            got
+            a favourite
             you'd like us to prioritize.</p>
         </div>
       </div>
@@ -162,11 +194,12 @@
     </section>
 
     <!-- FAQ -->
-    <section class="container col-xxl-8">
-      <div class="row px-4 pb-5 text-center">
-        <h1 class="display-5 fw-bold">Frequently Asked Questions</h1>
+    <section class="container container-faq col-xxl-8">
+      <div class="row text-center">
+        <h1 class="subtitle-section display-5">Frequently Asked Questions</h1>
         <div class="col-lg-6 mx-auto">
-          <p class="lead mb-3">Here are some of our FAQs. If you have any other questions you'd like to answered please
+          <p class="subtext-sectionlead mb-3">Here are some of our FAQs. If you have any other questions you'd like to
+            answered please
             feel free to send us email.</p>
         </div>
       </div>
@@ -182,6 +215,8 @@
             data-bs-parent="#accordionExample">
             <div class="accordion-body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Vestibulum tempus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum tempus. Lorem ipsum dolor sit amet,
               consectetur adipiscing elit. Vestibulum tempus.
             </div>
           </div>

@@ -71,22 +71,40 @@ p {
 }
 
 // Titulo y texto - Section
-.title-section {
+.title-section, .subtitle-section {
   color: $font-title;
   font-weight: 600;
   letter-spacing: 0.0.8rem;
   line-height: 1.1;
 }
 
+.title-section {
+  font-size: 3rem;
+}
+
+.subtitle-section {
+  font-size: 2.2rem;
+  padding-bottom: 0.8rem;
+}
+
 .text-section {
-  font-size: 1.1rem;
-  line-height: 1.3;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.subtext-section {
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 // Nav
 .nav-link {
   font-size: 0.9rem;
   font-weight: 500;
+}
+
+.nav-link:hover {
+  color: $secondary;
 }
 
 // Hero
@@ -114,8 +132,26 @@ display: block;
   z-index: 0;
 }
 
-// Cards
+// Tabs
 
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link:active {
+  color: $font-text;
+  background-color: transparent;
+  border-color: transparent transparent $secondary;
+  border-bottom: 4px solid !important;
+  font-size: 1rem;
+  // font-weight: bold;
+}
+
+#tabs .nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+  color: $font-text;
+  font-size: 20px;
+}
+
+// Cards
 .card {
   display: flex;
   align-items: center;
@@ -147,6 +183,12 @@ display: block;
   margin-bottom: 1rem;
 }
 
+// FAQ
+
+.container-faq {
+  margin-top: 10rem;
+}
+
 .accordion {
   display: flex;
   flex-direction: column;
@@ -163,8 +205,22 @@ display: block;
   border-bottom: 0.1rem solid rgba(215, 215, 215, 0.7);
 }
 
-.accordion-button, .accordion-body {
+.accordion-button {
   font-size: 0.9rem;
   color: $font-title;
-  font-weight: 500;
+}
+
+.accordion-button:hover {
+  color: $secondary;
+}
+
+.accordion-button:not(.collapsed), .accordion-button:focus {
+  background-color: white;
+  box-shadow: none;
+}
+
+.accordion-body {
+  color: $font-text;
+  font-size: 0.9rem;
+  line-height: 1.8;
 }
