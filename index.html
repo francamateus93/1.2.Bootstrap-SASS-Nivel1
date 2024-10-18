@@ -37,8 +37,6 @@
         </li>
         <button type="button" class="btn btn-danger px-4 text-uppercase">Login</button>
       </ul>
-      </ul>
-    </div>
     </div>
   </nav>
 
@@ -59,8 +57,8 @@
             see
             your sites load instantly. Try it for free!</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn-primary me-md-2 shadow">Get it on Chrome</button>
-            <button type="button" class="btn-grey shadow">Get it on Firefox</button>
+            <button type="button" class="btn-primary me-md-2">Get it on Chrome</button>
+            <button type="button" class="btn-grey">Get it on Firefox</button>
           </div>
         </div>
       </div>
@@ -162,6 +160,7 @@
             <div class="card-body">
               <h5 class="card-title">Add to Chrome</h5>
               <p class="card-text">Minimum version 62</p>
+              <img src="Imagenes/bg-dots.svg" class="py-4" alt="bg-dots">
               <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Add & Install Extension</button>
             </div>
           </div>
@@ -174,6 +173,7 @@
             <div class="card-body">
               <h5 class="card-title">Add to Firefox</h5>
               <p class="card-text">Minimum version 55</p>
+              <img src="Imagenes/bg-dots.svg" class="py-4" alt="bg-dots">
               <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Add & Install Extension</button>
             </div>
           </div>
@@ -186,6 +186,7 @@
             <div class="card-body">
               <h5 class="card-title">Add to Opera</h5>
               <p class="card-text">Minimum version 46</p>
+              <img src="Imagenes/bg-dots.svg" class="py-4" alt="bg-dots">
               <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Add & Install Extension</button>
             </div>
           </div>
@@ -271,10 +272,52 @@
       </div>
     </section>
 
-
-
+    <!-- FORM -->
+    <section class="form-container">
+      <div class="container col-xxl-8">
+        <div class="row d-flex justify-content-center">
+          <div class="d-flex flex-column gap-3 align-items-center mb-5">
+            <p class="form-text">35,000+ ALREADY JOINED</p>
+            <h2>Stay up-to-date with what we're doing</h2>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-6 form-group d-flex align-items-center justify-content-center">
+              <input type="email" class="form-control" placeholder="Enter your email address">
+              <button type="submit" class="btn btn-danger px-4 py-3">Contact Us
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer></footer>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <nav class="navbar navbar-expand-lg mx-auto container py-5 d-flex gap-5">
+      <img src="Imagenes/logo-bookmark-white.svg" height="40" class="cursor-pointer" alt="logo-bookmark">
+      <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+        <ul class="navbar-nav text-uppercase d-flex align-items-center justify-content-center gap-3">
+          <li class="nav-item text-white">
+            <a class="nav-link text-white fw-normal" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fw-normal" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fw-normal" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav text-uppercase d-flex align-items-center justify-content-center gap-3">
+          <li class="nav-item d-flex">
+            <a class="nav-link" href="#"><img src="Imagenes/icon-facebook.svg" alt="log-facebook"></a>
+            <a class="nav-link" href="#"><img src="Imagenes/icon-twitter.svg" alt="log-twitter"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </footer>
 
   <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
 </body>

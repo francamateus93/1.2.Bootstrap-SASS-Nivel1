@@ -25,6 +25,7 @@ p {
 }
 
 // Botones
+
 .btn-primary {
   background-color: $primary;
   border: none;
@@ -33,6 +34,7 @@ p {
   font-weight: 500;
   padding: 0.8rem 1.6rem;
   color: white;
+  box-shadow: 0 .5rem 1rem rgba($primary, .15);
 }
 
 .btn-primary:hover {
@@ -50,7 +52,7 @@ p {
 
 .btn-danger:hover {
   border: 2px solid $secondary;
-  background-color: transparent;
+  background-color: white;
   color: $secondary;
   font-weight: 500;
 }
@@ -71,6 +73,7 @@ p {
 }
 
 // Titulo y texto - Section
+
 .title-section, .subtitle-section {
   color: $font-title;
   font-weight: 600;
@@ -98,6 +101,7 @@ p {
 }
 
 // Nav
+
 .nav-link {
   font-size: 0.9rem;
   font-weight: 500;
@@ -107,7 +111,9 @@ p {
   color: $secondary;
 }
 
+
 // Hero
+
 .container-hero {
   position: relative;
   max-width: 400px;
@@ -137,21 +143,22 @@ display: block;
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link:active {
   color: $font-text;
   background-color: transparent;
-  border-color: transparent transparent $secondary;
+  // border-color: transparent transparent $secondary;
   border-bottom: 4px solid !important;
   font-size: 1rem;
   // font-weight: bold;
 }
 
 #tabs .nav-tabs .nav-link {
-  border: 1px solid transparent;
-  border-top-left-radius: .25rem;
-  border-top-right-radius: .25rem;
+  // border: 1px solid transparent;
+  // border-top-left-radius: .25rem;
+  // border-top-right-radius: .25rem;
   color: $font-text;
   font-size: 20px;
 }
 
 // Cards
+
 .card {
   display: flex;
   align-items: center;
@@ -165,7 +172,7 @@ display: block;
   display: flex;
   flex-direction: column;
   align-items: center;
-  // padding: 2rem 1rem;
+  padding: 0;
 }
 
 .card-img-top {
@@ -223,4 +230,27 @@ display: block;
   color: $font-text;
   font-size: 0.9rem;
   line-height: 1.8;
+}
+
+// Form
+
+.form-container {
+  background-color: $primary;
+  color: white;
+}
+
+.form-control {
+  width: 50%;
+}
+
+.form-text {
+  color: white;
+  letter-spacing: 0.6rem;
+}
+
+// Footer
+
+.footer {
+  background-color: $font-title;
+  color: white;
 }

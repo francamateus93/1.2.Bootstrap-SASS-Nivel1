@@ -21,6 +21,7 @@ p {
   font-weight: 500;
   padding: 0.8rem 1.6rem;
   color: white;
+  box-shadow: 0 0.5rem 1rem rgba(82, 101, 225, 0.15);
 }
 
 .btn-primary:hover {
@@ -38,7 +39,7 @@ p {
 
 .btn-danger:hover {
   border: 2px solid #FA5959;
-  background-color: transparent;
+  background-color: white;
   color: #FA5959;
   font-weight: 500;
 }
@@ -120,15 +121,11 @@ p {
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link:active {
   color: #898989;
   background-color: transparent;
-  border-color: transparent transparent #FA5959;
   border-bottom: 4px solid !important;
   font-size: 1rem;
 }
 
 #tabs .nav-tabs .nav-link {
-  border: 1px solid transparent;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
   color: #898989;
   font-size: 20px;
 }
@@ -146,6 +143,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0;
 }
 
 .card-img-top {
@@ -201,6 +199,25 @@ p {
   color: #898989;
   font-size: 0.9rem;
   line-height: 1.8;
+}
+
+.form-container {
+  background-color: #5265E1;
+  color: white;
+}
+
+.form-control {
+  width: 50%;
+}
+
+.form-text {
+  color: white;
+  letter-spacing: 0.6rem;
+}
+
+.footer {
+  background-color: #080239;
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */
