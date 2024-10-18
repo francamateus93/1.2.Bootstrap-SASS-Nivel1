@@ -9,13 +9,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="/main.css">
-  <title>BookMark - WebPage made with Bootstrap</title>
+  <title>BookMark - A Simple Bookmark Manager</title>
 </head>
 
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg mx-auto container py-5 d-flex justify-content-between">
+  <nav class="navbar navbar-expand-lg container d-flex justify-content-between">
     <img src="Imagenes/logo-bookmark.svg" height="40" class="cursor-pointer" alt="logo-bookmark">
 
     <!-- TOGGLE -->
@@ -25,15 +25,15 @@
     </button>
 
     <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
-      <ul class="navbar-nav text-uppercase d-flex align-items-center justify-content-center gap-3">
+      <ul class="navbar-nav text-uppercase d-flex align-items-center justify-content-center gap-5">
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#features">Features</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="#cards">Pricing</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#form">Contact</a>
         </li>
         <button type="button" class="btn btn-danger px-4 text-uppercase">Login</button>
       </ul>
@@ -46,8 +46,8 @@
       <div class="row flex-lg-row-reverse align-items-center g-5">
         <div class="col-10 col-sm-8 col-lg-7">
           <div class="container-hero">
-            <!-- <div class="rectangulo"></div> -->
             <img src="Imagenes/illustration-hero.svg" class="image" alt="illustration-hero">
+            <div class="rectangulo"></div>
           </div>
         </div>
         <div class="col-lg-5">
@@ -65,7 +65,7 @@
     </section>
 
     <!-- FEATURES -->
-    <section class="container col-xxl-8">
+    <section class="container col-xxl-8" id="features">
       <div class="row px-4 py-3 text-center">
         <h1 class="subtitle-section display-5">Features</h1>
         <div class="col-lg-6 mx-auto">
@@ -75,56 +75,32 @@
         </div>
       </div>
 
-      <!-- Tabs navs -->
-      <!-- <div class="row px-4 text-center">
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link border-bottom p-4" href="">Simple Bookmarking</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link border-bottom p-4" href="">Speedy Searching</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link border-bottom p-4" href="">Easy Sharing</a>
-          </li>
-        </ul>
-      </div> -->
-
       <div class="container">
         <div class="row">
           <div class="col-xs-12 ">
             <nav>
               <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link" id="nav-simple-tab" data-toggle="tab" href="#nav-simple"
-                  aria-controls="nav-simple" aria-selected="false">Simple Bookmarking</a>
-                <a class="nav-item nav-link" id="nav-speedy-tab" data-toggle="tab" href="#nav-speedy"
-                  aria-controls="nav-speedy" aria-selected="false">Speedy Searching</a>
-                <a class="nav-item nav-link" id="nav-easy-tab" data-toggle="tab" href="#nav-easy"
-                  aria-controls="nav-easy" aria-selected="false">Easy Sharing</a>
+                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                  aria-controls="nav-profile" aria-selected="false">Simple Bookmarking</a>
+                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                  aria-controls="nav-contact" aria-selected="false">Speedy Searching</a>
+                <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab"
+                  aria-controls="nav-about" aria-selected="false">Easy Sharing</a>
+              </div>
             </nav>
             <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-              <div class="tab-pane fade show active" id="nav-simple" role="tabpanel" aria-labelledby="nav-simple-tab">
-                <div class="row pb-4 pe-lg-0 align-items-center">
-                  <div class="col-lg-6 py-lg-5 pt-lg-3 pe-2">
-                    <h1 class="display-4 fw-bold lh-1">Border hero with cropped image and shadows</h1>
-                    <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the
-                      world’s most
-                      popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid
-                      system,
-                      extensive prebuilt components, and powerful JavaScript plugins.</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-                      <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">More info</button>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 p-0">
-                    <img class="rounded-lg-3 ps-4 imagem" src="Imagenes/illustration-features-tab-1.svg"
-                      alt="illustration-border">
-                  </div>
-                </div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat
+                veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit
+                non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim
+                occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit.
+                Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit
+                occaecat anim ullamco ad duis occaecat ex.
               </div>
-              <div class="" id="nav-speedy" role="tabpanel" aria-labelledby="nav-speedy-tab">
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat
               </div>
-              <div class="tab-pane fade" id="nav-easy" role="tabpanel" aria-labelledby="nav-easy-tab">
+              <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
                 Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat
                 veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit
                 non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim
@@ -141,7 +117,7 @@
 
 
     <!-- CARDS -->
-    <section class="container col-xxl-8">
+    <section class="container col-xxl-8" id="cards">
       <div class="row px-4 pb-5 text-center">
         <h1 class="subtitle-section display-5">Download the extension</h1>
         <div class="col-lg-6 mx-auto">
@@ -152,42 +128,43 @@
         </div>
       </div>
 
-      <!-- Card1 -->
       <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Card1 -->
+
         <div class="col d-flex justify-content-end">
-          <div class="card shadow d-flex justify-content-between rounded-lg-5 py-5">
-            <img src="/Imagenes/logo-chrome.svg" class="card-img-top" alt="chorme-extension" />
+          <div class="card card-1 shadow">
             <div class="card-body">
+              <img src="/Imagenes/logo-chrome.svg" class="card-img-top" alt="chorme-extension" />
               <h5 class="card-title">Add to Chrome</h5>
               <p class="card-text">Minimum version 62</p>
               <img src="Imagenes/bg-dots.svg" class="py-4" alt="bg-dots">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Add & Install Extension</button>
+              <button type="button" class="btn btn-primary btn-lg px-4">Add & Install Extension</button>
             </div>
           </div>
         </div>
 
         <!-- Card2 -->
         <div class="col d-flex justify-content-center">
-          <div class="card shadow rounded-lg-5 py-5">
-            <img src="/Imagenes/logo-firefox.svg" class="card-img-top" alt="chorme-extension" />
+          <div class="card card-2 shadow py-5">
             <div class="card-body">
+              <img src="/Imagenes/logo-firefox.svg" class="card-img-top" alt="chorme-extension" />
               <h5 class="card-title">Add to Firefox</h5>
               <p class="card-text">Minimum version 55</p>
               <img src="Imagenes/bg-dots.svg" class="py-4" alt="bg-dots">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Add & Install Extension</button>
+              <button type="button" class="btn btn-primary btn-lg px-4 ">Add & Install Extension</button>
             </div>
           </div>
         </div>
 
         <!-- Card3 -->
         <div class="col d-flex justify-content-start">
-          <div class="card shadow rounded-lg-5 py-5">
+          <div class="card card-3 shadow py-5">
             <img src="/Imagenes/logo-opera.svg" class="card-img-top" alt="chorme-extension" />
             <div class="card-body">
               <h5 class="card-title">Add to Opera</h5>
               <p class="card-text">Minimum version 46</p>
               <img src="Imagenes/bg-dots.svg" class="py-4" alt="bg-dots">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Add & Install Extension</button>
+              <button type="button" class="btn btn-primary btn-lg px-4">Add & Install Extension</button>
             </div>
           </div>
         </div>
@@ -195,11 +172,11 @@
     </section>
 
     <!-- FAQ -->
-    <section class="container container-faq col-xxl-8">
+    <section class="container col-xxl-8">
       <div class="row text-center">
         <h1 class="subtitle-section display-5">Frequently Asked Questions</h1>
         <div class="col-lg-6 mx-auto">
-          <p class="subtext-sectionlead mb-3">Here are some of our FAQs. If you have any other questions you'd like to
+          <p class="subtext-section lead mb-3">Here are some of our FAQs. If you have any other questions you'd like to
             answered please
             feel free to send us email.</p>
         </div>
@@ -267,14 +244,14 @@
             </div>
           </div>
         </div>
-        <button type="button" class="btn btn-primary btn-lg px-4 mt-5">More
+        <button type="button" class="btn btn-primary btn-lg px-4 my-5">More
           info</button>
       </div>
     </section>
 
     <!-- FORM -->
-    <section class="form-container">
-      <div class="container col-xxl-8">
+    <section class="form-container" id="form">
+      <div class="container my-0 col-xxl-8">
         <div class="row d-flex justify-content-center">
           <div class="d-flex flex-column gap-3 align-items-center mb-5">
             <p class="form-text">35,000+ ALREADY JOINED</p>
@@ -283,7 +260,7 @@
           <div class="row d-flex justify-content-center">
             <div class="col-6 form-group d-flex align-items-center justify-content-center">
               <input type="email" class="form-control" placeholder="Enter your email address">
-              <button type="submit" class="btn btn-danger px-4 py-3">Contact Us
+              <button type="submit" class="btn btn-danger px-4">Contact Us
             </div>
           </div>
         </div>
@@ -291,28 +268,30 @@
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer class="footer">
-    <nav class="navbar navbar-expand-lg mx-auto container py-5 d-flex gap-5">
-      <img src="Imagenes/logo-bookmark-white.svg" height="40" class="cursor-pointer" alt="logo-bookmark">
+    <nav class="navbar navbar-expand-lg container py-4 d-flex gap-5">
+      <img src="Imagenes/logo-bookmark-white.svg" height="30" class="cursor-pointer" alt="logo-bookmark">
       <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
         <ul class="navbar-nav text-uppercase d-flex align-items-center justify-content-center gap-3">
           <li class="nav-item text-white">
-            <a class="nav-link text-white fw-normal" href="#">Features</a>
+            <a class="nav-link text-white fw-light" href="#features">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white fw-normal" href="#">Pricing</a>
+            <a class="nav-link text-white fw-light" href="#cards">Pricing</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white fw-normal" href="#">Contact</a>
+            <a class="nav-link text-white fw-light" href="#form">Contact</a>
           </li>
         </ul>
       </div>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav text-uppercase d-flex align-items-center justify-content-center gap-3">
           <li class="nav-item d-flex">
-            <a class="nav-link" href="#"><img src="Imagenes/icon-facebook.svg" alt="log-facebook"></a>
-            <a class="nav-link" href="#"><img src="Imagenes/icon-twitter.svg" alt="log-twitter"></a>
+            <a class="nav-link" href="https://www.facebook.com/barcelonactiva/" target="_blank"><img
+                src="Imagenes/icon-facebook.svg" alt="log-facebook"></a>
+            <a class="nav-link" href="https://x.com/barcelonactiva" target="_blank"><img src="Imagenes/icon-twitter.svg"
+                alt="log-twitter"></a>
           </li>
         </ul>
       </div>
