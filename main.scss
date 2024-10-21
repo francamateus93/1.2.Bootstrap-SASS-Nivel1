@@ -180,18 +180,11 @@ p {
 .image {
   position: relative;
   display: block;
-  max-width: 36rem;
   height: auto; 
   z-index: 1;
 }
 
 // Tabs
-
-.tab-box {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-}
 
 .nav-tabs {
   border: none;
@@ -242,6 +235,9 @@ p {
   margin-top: 80px; 
 }
 
+img {
+  max-width: 100%;
+}
 
 .card-body {
   display: flex;
@@ -253,6 +249,7 @@ p {
 
 .card-img-top {
   width: 5rem;
+  max-width: 100%;
 }
 
 .card-title {
@@ -286,7 +283,7 @@ p {
 
 .accordion-item {
   border: none;
-  width: 620px;
+  width: 100%;
 }
 
 .accordion-button {
@@ -322,7 +319,6 @@ p {
 }
 
 .form-input {
-  width: 100%;
   padding: 1rem 2rem;
   border: none;
   border-radius: 8px;
@@ -358,4 +354,49 @@ p {
   background-color: $font-title;
   color: white;
   margin: 0;
+}
+
+@media (max-width: 420px) {
+  .container {
+    padding: 2rem 1rem; /* Menos padding em telas menores */
+  }
+  
+  .title-section {
+    font-size: 2rem; /* Reduzir o tamanho da fonte nos dispositivos móveis */
+  }
+  
+  .subtitle-section {
+    font-size: 1.5rem; /* Ajustando o tamanho da fonte */
+  }
+  
+  .text-section {
+    font-size: 1rem; /* Tamanho de texto menor em dispositivos móveis */
+  }
+  
+  .container-hero {
+    max-width: 100%; /* Permitir que a imagem ocupe 100% da largura do contêiner */
+  }
+  
+  .image {
+    width: 100%; /* Para garantir a responsividade da imagem */
+    height: auto; /* Para manter a proporção da imagem */
+  }
+  
+  .btn-menu {
+    padding: 0.5rem calc(1rem + 1vw); /* Tamanho responsivo */
+  }
+  
+  .social-icons {
+    bottom: 10px; /* Ajuste da posição dos ícones para telas menores */
+  }
+  
+  .card {
+    margin-bottom: 1rem; /* Margem inferior menor entre os cartões */
+  }
+  
+  /* Aumentando o espaço para itens do menu em telas menores */
+  .navbar-nav {
+    flex-direction: column; /* Para colocar os itens do menu em coluna */
+    text-align: center; /* Centraliza os itens do menu */
+  }
 }

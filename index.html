@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
@@ -16,7 +16,7 @@
 
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg container d-flex justify-content-between">
-    <a href="#"><img src="Imagenes/logo-bookmark.svg" height="40" class="cursor-pointer" alt="logo-bookmark"></a>
+    <a href="#"><img src="Imagenes/logo-bookmark.svg" class="cursor-pointer img-fluid" alt="logo-bookmark"></a>
 
     <!-- TOGGLE -->
     <button id="menuToggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -52,10 +52,10 @@
   <main>
     <!-- HERO -->
     <section class="container">
-      <div class="row flex-lg-row-reverse align-items-center g-5">
+      <div class="row flex-lg-row-reverse justify-content-center align-items-center g-5">
         <div class="col-10 col-sm-8 col-lg-7">
           <div class="container-hero">
-            <img src="Imagenes/illustration-hero.svg" class="image" alt="illustration-hero">
+            <img src="Imagenes/illustration-hero.svg" class="image img-fluid" alt="illustration-hero">
             <!-- <div class="rectangulo"></div> -->
           </div>
         </div>
@@ -86,7 +86,7 @@
 
       <div class="row py-4">
         <div class="col-xs-12 ">
-          <ul class="nav nav-tabs justify-content-center gap-5" id="myTab" role="tablist">
+          <ul class="nav nav-tabs justify-content-center gap-md-5" id="myTab" role="tablist">
             <li class="tab-item">
               <a class="nav-item tab-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab"
                 aria-controls="tab1" aria-selected="true">Simple Bookmarking</a>
@@ -103,9 +103,9 @@
 
           <div class="tab-content mt-5" id="myTabContent">
             <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
-              <div class="tab-box">
+              <div class="col-12 d-block d-md-flex gap-2 align-items-md-center">
                 <img src="Imagenes/illustration-features-tab-1.svg" alt="Tab 1 Image" class="img-fluid">
-                <div class="p-4">
+                <div class="p-4 text-center text-md-start">
                   <h2 class="subtitle-section">Bookmark in one click</h2>
                   <p class="subtext-section">Et et consectetur ipsum labore excepteur est proident excepteur ad velit
                     occaecat qui
@@ -118,9 +118,9 @@
               </div>
             </div>
             <div class="tab-pane fade" id="tab2" role="tabpane2" aria-labelledby="tab2-tab">
-              <div class="tab-box">
+              <div class="col-12 d-block d-md-flex gap-2 align-items-md-center">
                 <img src="Imagenes/illustration-features-tab-2.svg" alt="Tab 1 Image" class="img-fluid">
-                <div class="p-4">
+                <div class="p-4 text-center text-md-start">
                   <h2 class="subtitle-section">Intelligent search</h2>
                   <p class="subtext-section">Et et consectetur ipsum labore excepteur est proident excepteur ad velit
                     occaecat qui
@@ -133,9 +133,9 @@
               </div>
             </div>
             <div class="tab-pane fade" id="tab3" role="tabpane3" aria-labelledby="tab3-tab">
-              <div class="tab-box">
+              <div class="col-12 d-block d-md-flex gap-2 align-items-md-center">
                 <img src="Imagenes/illustration-features-tab-3.svg" alt="Tab 1 Image" class="img-fluid">
-                <div class="p-4">
+                <div class="p-4 text-center text-md-start">
                   <h2 class="subtitle-section">Share your bookmark</h2>
                   <p class="subtext-section">Et et consectetur ipsum labore excepteur est proident excepteur ad velit
                     occaecat qui
@@ -169,13 +169,13 @@
       <div class="row row-cols-1 row-cols-md-3 g-4">
 
         <!-- Card1 -->
-        <div class="col d-flex justify-content-end">
+        <div class="col d-flex justify-content-center justify-content-md-end">
           <div class="card card-1 shadow">
             <div class="card-body">
-              <img src="/Imagenes/logo-chrome.svg" class="card-img-top" alt="chorme-extension" />
+              <img src="/Imagenes/logo-chrome.svg" class="card-img-top img-fluid" alt="chorme-extension" />
               <h5 class="card-title">Add to Chrome</h5>
               <p class="card-text">Minimum version 62</p>
-              <img src="Imagenes/bg-dots.svg" class="py-4" alt="bg-dots">
+              <img src="Imagenes/bg-dots.svg" class="py-4 img-fluid" alt="bg-dots">
               <button type="button" class="btn btn-primary btn-lg px-4">Add & Install Extension</button>
             </div>
           </div>
@@ -185,23 +185,23 @@
         <div class="col d-flex justify-content-center">
           <div class="card card-2 shadow py-5">
             <div class="card-body">
-              <img src="/Imagenes/logo-firefox.svg" class="card-img-top" alt="chorme-extension" />
+              <img src="/Imagenes/logo-firefox.svg" class="card-img-top img-fluid" alt="chorme-extension" />
               <h5 class="card-title">Add to Firefox</h5>
               <p class="card-text">Minimum version 55</p>
-              <img src="Imagenes/bg-dots.svg" class="py-4" alt="bg-dots">
+              <img src="Imagenes/bg-dots.svg" class="py-4 img-fluid" alt="bg-dots">
               <button type="button" class="btn btn-primary btn-lg px-4 ">Add & Install Extension</button>
             </div>
           </div>
         </div>
 
         <!-- Card3 -->
-        <div class="col d-flex justify-content-start">
+        <div class="col d-flex justify-content-center justify-content-md-start">
           <div class="card card-3 shadow py-5">
-            <img src="/Imagenes/logo-opera.svg" class="card-img-top" alt="chorme-extension" />
+            <img src="/Imagenes/logo-opera.svg" class="card-img-top img-fluid" alt="chorme-extension" />
             <div class="card-body">
               <h5 class="card-title">Add to Opera</h5>
               <p class="card-text">Minimum version 46</p>
-              <img src="Imagenes/bg-dots.svg" class="py-4" alt="bg-dots">
+              <img src="Imagenes/bg-dots.svg" class="py-4 img-fluid" alt="bg-dots">
               <button type="button" class="btn btn-primary btn-lg px-4">Add & Install Extension</button>
             </div>
           </div>
@@ -295,17 +295,18 @@
     <section class="form-container" id="form">
       <div class="container my-0 col-xxl-8">
         <div class="row d-flex justify-content-center">
-          <div class="d-flex flex-column gap-3 align-items-center mb-5">
+          <div class="d-flex flex-column gap-3 align-items-center text-center mb-2 mb-md-5">
             <p class="form-text">35,000+ ALREADY JOINED</p>
             <h2>Stay up-to-date with what we're doing</h2>
           </div>
           <div class="row d-flex justify-content-center">
-            <div class="col-6 form-group d-flex align-items-center justify-content-center gap-3">
-              <div>
-                <input type="email" id="emailInput" class="form-input" placeholder="Enter your email address">
+            <div class="form-group d-md-flex align-items-md-center justify-content-md-center gap-3">
+              <div class="py-3">
+                <input type="email" id="emailInput" class="form-input w-100" placeholder="Enter your email address">
                 <div id="errorMessage" class="input-alert d-none" role="alert"></div>
               </div>
-              <button type="submit" id="submitButton" class="btn btn-danger px-4 py-3">Contact Us</button>
+              <button type="submit" id="submitButton" class="btn btn-danger px-4 py-3 w-md-10 d-block">Contact
+                Us</button>
             </div>
           </div>
         </div>
@@ -316,9 +317,11 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <nav class="navbar navbar-expand-lg container py-4 d-flex gap-5">
-      <img src="Imagenes/logo-bookmark-white.svg" height="30" class="cursor-pointer" alt="logo-bookmark">
-      <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+    <nav class="navbar navbar-expand-lg container py-4 d-flex justify-content-center gap-5">
+      <div class="d-flex justify-content-center">
+        <img src="Imagenes/logo-bookmark-white.svg" class="img-fluid cursor-pointer" alt="logo-bookmark">
+      </div>
+      <div class="navbar-collapse flex-grow-0" id="navbarNav">
         <ul class="navbar-nav text-uppercase d-flex align-items-center justify-content-center gap-3">
           <li class="nav-item text-white">
             <a class="nav-link text-white fw-light" href="#features">Features</a>
@@ -331,10 +334,10 @@
           </li>
         </ul>
       </div>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <div class="navbar-collapse d-flex justify-content-center justify-content-md-end" id="navbarNav">
         <ul class="navbar-nav text-uppercase d-flex align-items-center justify-content-center gap-3">
           <li class="nav-item d-flex">
-            <a class="nav-link" href="https://www.facebook.com/barcelonactiva/" target="_blank"><img
+            <a class="nav-link px-3" href="https://www.facebook.com/barcelonactiva/" target="_blank"><img
                 src="Imagenes/icon-facebook.svg" alt="log-facebook"></a>
             <a class="nav-link" href="https://x.com/barcelonactiva" target="_blank"><img src="Imagenes/icon-twitter.svg"
                 alt="log-twitter"></a>
