@@ -16,7 +16,7 @@
 
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg container d-flex justify-content-between">
-    <img src="Imagenes/logo-bookmark.svg" height="40" class="cursor-pointer" alt="logo-bookmark">
+    <a href="#"><img src="Imagenes/logo-bookmark.svg" height="40" class="cursor-pointer" alt="logo-bookmark"></a>
 
     <!-- TOGGLE -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -47,7 +47,7 @@
         <div class="col-10 col-sm-8 col-lg-7">
           <div class="container-hero">
             <img src="Imagenes/illustration-hero.svg" class="image" alt="illustration-hero">
-            <div class="rectangulo"></div>
+            <!-- <div class="rectangulo"></div> -->
           </div>
         </div>
         <div class="col-lg-5">
@@ -75,41 +75,69 @@
         </div>
       </div>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 ">
-            <nav>
-              <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
-                  aria-controls="nav-profile" aria-selected="false">Simple Bookmarking</a>
-                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
-                  aria-controls="nav-contact" aria-selected="false">Speedy Searching</a>
-                <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab"
-                  aria-controls="nav-about" aria-selected="false">Easy Sharing</a>
-              </div>
-            </nav>
-            <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat
-                veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit
-                non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim
-                occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit.
-                Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit
-                occaecat anim ullamco ad duis occaecat ex.
-              </div>
-              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat
-              </div>
-              <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
-                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat
-                veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit
-                non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim
-                occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit.
-                Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit
-                occaecat anim ullamco ad duis occaecat ex.
+      <div class="row py-4">
+        <div class="col-xs-12 ">
+          <ul class="nav nav-tabs justify-content-center gap-5" id="myTab" role="tablist">
+            <li class="tab-item">
+              <a class="nav-item tab-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab"
+                aria-controls="tab1" aria-selected="true">Simple Bookmarking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item tab-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2"
+                aria-selected="false">Speedy Searching</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item tab-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3"
+                aria-selected="false">Easy Sharing</a>
+            </li>
+          </ul>
+
+          <div class="tab-content mt-5" id="myTabContent">
+            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+              <div class="tab-box">
+                <img src="Imagenes/illustration-features-tab-1.svg" alt="Tab 1 Image" class="img-fluid">
+                <div class="p-4">
+                  <h2 class="subtitle-section">Bookmark in one click</h2>
+                  <p class="subtext-section">Et et consectetur ipsum labore excepteur est proident excepteur ad velit
+                    occaecat qui
+                    minim
+                    occaecat
+                    veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim.
+                    Velit.</p>
+                  <button type="button" class="btn btn-primary btn-lg px-4">More info</button>
+                </div>
               </div>
             </div>
-
+            <div class="tab-pane fade" id="tab2" role="tabpane2" aria-labelledby="tab2-tab">
+              <div class="tab-box">
+                <img src="Imagenes/illustration-features-tab-2.svg" alt="Tab 1 Image" class="img-fluid">
+                <div class="p-4">
+                  <h2 class="subtitle-section">Intelligent search</h2>
+                  <p class="subtext-section">Et et consectetur ipsum labore excepteur est proident excepteur ad velit
+                    occaecat qui
+                    minim
+                    occaecat
+                    veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim.
+                    Velit.</p>
+                  <button type="button" class="btn btn-primary btn-lg px-4">More info</button>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="tab3" role="tabpane3" aria-labelledby="tab3-tab">
+              <div class="tab-box">
+                <img src="Imagenes/illustration-features-tab-3.svg" alt="Tab 1 Image" class="img-fluid">
+                <div class="p-4">
+                  <h2 class="subtitle-section">Share your bookmark</h2>
+                  <p class="subtext-section">Et et consectetur ipsum labore excepteur est proident excepteur ad velit
+                    occaecat qui
+                    minim
+                    occaecat
+                    veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim.
+                    Velit.</p>
+                  <button type="button" class="btn btn-primary btn-lg px-4">More info</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -129,8 +157,8 @@
       </div>
 
       <div class="row row-cols-1 row-cols-md-3 g-4">
-        <!-- Card1 -->
 
+        <!-- Card1 -->
         <div class="col d-flex justify-content-end">
           <div class="card card-1 shadow">
             <div class="card-body">
@@ -185,11 +213,11 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-              aria-expanded="true" aria-controls="collapseOne">
+              aria-expanded="false" aria-controls="collapseOne">
               What is Bookmark?
             </button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
             data-bs-parent="#accordionExample">
             <div class="accordion-body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus. Lorem ipsum dolor sit amet,
@@ -199,6 +227,7 @@
             </div>
           </div>
         </div>
+
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -214,6 +243,7 @@
             </div>
           </div>
         </div>
+
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -229,6 +259,7 @@
             </div>
           </div>
         </div>
+
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingFour">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -236,7 +267,7 @@
               What about other Chromium browsers?
             </button>
           </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
             data-bs-parent="#accordionExample">
             <div class="accordion-body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus..Lorem ipsum dolor sit amet,
@@ -258,9 +289,14 @@
             <h2>Stay up-to-date with what we're doing</h2>
           </div>
           <div class="row d-flex justify-content-center">
-            <div class="col-6 form-group d-flex align-items-center justify-content-center">
-              <input type="email" class="form-control" placeholder="Enter your email address">
-              <button type="submit" class="btn btn-danger px-4">Contact Us
+            <div class="col-6 form-group d-flex align-items-center justify-content-center gap-3">
+              <input type="email" id="emailInput" class="form-input" placeholder="Enter your email address">
+              <button type="submit" id="submitButton" class="btn btn-danger px-4 py-3">Contact Us</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div id="errorMessage" class="alert alert-danger d-none" role="alert"></div>
             </div>
           </div>
         </div>
@@ -299,6 +335,9 @@
   </footer>
 
   <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="/index.js"></script>
 </body>
 
 </html>

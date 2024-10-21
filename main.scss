@@ -2,8 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 // Colores
-$primary: #5265E1; // Color principal
-$secondary: #FA5959; // Color secundary
+$primary: #5265E1;
+$secondary: #FA5959;
+$tertiary: #d3d3d3;
+$font-active: #4e4e4e;
 $font-title: #080239;
 $font-text: #898989;;
 
@@ -114,7 +116,6 @@ p {
   color: $secondary;
 }
 
-
 // Hero
 
 .container-hero {
@@ -127,7 +128,7 @@ p {
   position: absolute;
   top: 120px;
   left: 100px;
-  width: 800px;
+  width: 600px;
   height: 300px;
   background-color: rgba(82, 101, 225);
   border-radius: 150px;
@@ -144,26 +145,34 @@ p {
 
 // Tabs
 
-#tabs .nav-tabs .nav-link, .nav-item {
-  // border: 1px solid transparent;
-  // border-top-left-radius: .25rem;
-  // border-top-right-radius: .25rem;
-  color: $font-text;
-  font-size: 0.8 rem;
+.tab-box {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-tabs {
   border: none;
+  border-bottom: 1px solid $tertiary;
 }
 
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link:focus {
+.tab-link {
+  display: block;
+  padding: 1rem 2rem;
+  text-decoration: none;
   color: $font-text;
-  background-color: transparent;
-  // border-color: transparent transparent $secondary;
-  border-bottom: 4px solid !important;
-  font-size: 1rem;
-  // font-weight: bold;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
 
+.tab-link.active {
+  border-bottom: 3px solid red;
+  color: $font-title !important;
+  font-weight: 500;
+}
 
-.nav-link, .nav-item:hover {
+.tab-item {
+  max-width: 800px;
+  justify-content: center;
   border: none;
 }
 
@@ -270,9 +279,15 @@ p {
   margin-bottom: 0;
 }
 
-.form-control {
-  width: 50%;
+.form-input {
+  width: 70%;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  appearance: none;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
+
 
 .form-text {
   color: white;

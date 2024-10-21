@@ -89,8 +89,8 @@ p {
 }
 
 .nav-link {
-  font-size: 0.8rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .nav-link:hover {
@@ -107,7 +107,7 @@ p {
   position: absolute;
   top: 120px;
   left: 100px;
-  width: 800px;
+  width: 600px;
   height: 300px;
   background-color: rgb(82, 101, 225);
   border-radius: 150px;
@@ -122,20 +122,34 @@ p {
   z-index: 1;
 }
 
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link:focus {
-  color: #898989;
-  background-color: transparent;
-  border-bottom: 4px solid !important;
-  font-size: 1rem;
+.tab-box {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 }
 
-#tabs .nav-tabs .nav-link, .nav-item {
-  color: #898989;
-  font-size: 0.8 rem;
+.nav-tabs {
   border: none;
+  border-bottom: 1px solid #d3d3d3;
 }
 
-.nav-link, .nav-item:hover {
+.tab-link {
+  display: block;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: #898989;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.tab-link.active {
+  border-bottom: 3px solid red;
+  color: #080239 !important;
+  font-weight: 500;
+}
+
+.tab-item {
+  max-width: 800px;
+  justify-content: center;
   border: none;
 }
 
@@ -236,8 +250,13 @@ p {
   margin-bottom: 0;
 }
 
-.form-control {
-  width: 50%;
+.form-input {
+  width: 70%;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  appearance: none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .form-text {
