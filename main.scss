@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 // Colores
+
 $primary: #5265E1;
 $secondary: #FA5959;
 $tertiary: #d3d3d3;
@@ -10,9 +11,11 @@ $font-title: #080239;
 $font-text: #898989;;
 
 // Fontes
+
 $principal: "Rubik", sans-serif;
 
 // Padding & Margin
+
 .container {
   padding: 4rem 1.2rem;
   margin: 0 auto;
@@ -170,7 +173,7 @@ p {
   position: absolute;
   top: 120px;
   left: 100px;
-  width: 600px;
+  width: 800px;
   height: 300px;
   background-color: rgba(82, 101, 225);
   border-radius: 150px;
@@ -356,47 +359,46 @@ img {
   margin: 0;
 }
 
-@media (max-width: 420px) {
+@media (min-width: 576px) {
   .container {
-    padding: 2rem 1rem; /* Menos padding em telas menores */
+    padding: 2rem 1rem;
   }
   
   .title-section {
-    font-size: 2rem; /* Reduzir o tamanho da fonte nos dispositivos móveis */
+    font-size: 2rem; 
   }
   
   .subtitle-section {
-    font-size: 1.5rem; /* Ajustando o tamanho da fonte */
+    font-size: 1.5rem;
   }
   
   .text-section {
-    font-size: 1rem; /* Tamanho de texto menor em dispositivos móveis */
+    font-size: 1rem;
   }
   
   .container-hero {
-    max-width: 100%; /* Permitir que a imagem ocupe 100% da largura do contêiner */
+    max-width: 100%; 
   }
   
   .image {
-    width: 100%; /* Para garantir a responsividade da imagem */
-    height: auto; /* Para manter a proporção da imagem */
+    width: 100%;
+    height: auto;
   }
   
   .btn-menu {
-    padding: 0.5rem calc(1rem + 1vw); /* Tamanho responsivo */
+    padding: 0.5rem calc(1rem + 1vw);
   }
   
   .social-icons {
-    bottom: 10px; /* Ajuste da posição dos ícones para telas menores */
+    bottom: 10px;
   }
   
   .card {
-    margin-bottom: 1rem; /* Margem inferior menor entre os cartões */
+    margin-bottom: 1rem;
   }
   
-  /* Aumentando o espaço para itens do menu em telas menores */
   .navbar-nav {
-    flex-direction: column; /* Para colocar os itens do menu em coluna */
-    text-align: center; /* Centraliza os itens do menu */
+    flex-direction: column;
+    text-align: center;
   }
 }
