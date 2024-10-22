@@ -10,7 +10,7 @@ body {
 }
 
 p {
-  color: #898989;
+  color: #8a8a8a;
 }
 
 .btn-primary {
@@ -53,11 +53,11 @@ p {
   font-weight: 500;
   color: #707070;
   padding: 0.8rem 1.6rem;
-  box-shadow: 0 0.5rem 1rem rgba(137, 137, 137, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(138, 138, 138, 0.15);
 }
 
 .btn-grey:hover, .btn-grey:active {
-  border: 1px solid #898989;
+  border: 1px solid #8a8a8a;
   background-color: transparent;
 }
 
@@ -172,7 +172,7 @@ p {
   display: block;
   padding: 1rem 2rem;
   text-decoration: none;
-  color: #898989;
+  color: #8a8a8a;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 
@@ -240,7 +240,7 @@ img {
 
 .card-text {
   font-size: 0.9rem;
-  color: #898989;
+  color: #8a8a8a;
   margin-bottom: 0;
 }
 
@@ -279,7 +279,7 @@ img {
 }
 
 .accordion-body {
-  color: #898989;
+  color: #8a8a8a;
   font-size: 0.9rem;
   line-height: 1.8;
 }

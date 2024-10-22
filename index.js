@@ -35,7 +35,8 @@ const errorMessage = document.getElementById('errorMessage');
   
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   
-// Comprueba si está vacío o el correo electrónico no tiene el formato correcto
+// Comprueba si está vacío o el correo electrónico no está correcto
+
 if (emailInput.value.trim() === '') {
     errorMessage.textContent = 'Introduce una dirección de correo electrónico.';
     errorMessage.classList.remove('d-none');
